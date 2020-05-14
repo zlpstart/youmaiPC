@@ -1,0 +1,40 @@
+.navMenu {
+    width: 1170px;
+    height: 50px;
+    background: red;
+    margin: auto;
+    line-height: 50px;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 45px;
+    left: 50%;
+    transform: translate(-50%,0);
+}
+.navMenu_logo {
+    width: 70px;
+    height: 50px;
+}
+.navMenu_logo img {
+    width: 100%;
+    height: 100%;
+}
+.navMenu_li a {
+    font-size:16px;
+    font-family:Microsoft YaHei;
+    font-weight:400;
+    color:white;
+}
+.navMenu_li a:hover,.router-link-exact-active {
+    font-size:16px;
+    font-family:Microsoft YaHei;
+    font-weight:400;
+    color:rgba(4,170,232,1);
+}
+.navMenu_li ul {
+    display: flex;
+    flex: 1;
+}
+.navMenu_li li {
+    margin-left: 100px;
+}
