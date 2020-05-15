@@ -1,34 +1,6 @@
 <template>
   <div class="serve">
-    <div class="serve_li">
-      <div class="li_box">
-        <div class="box_img">
-          <img src alt />
-        </div>
-        <div class="box_txt">
-          <h1>智慧</h1>
-          <p>简单简单简单简单简单简单简单简单</p>
-        </div>
-      </div>
-      <div class="li_box">
-        <div class="box_img">
-          <img src alt />
-        </div>
-        <div class="box_txt">
-          <h1>高效</h1>
-          <p>简单简单简单简单简单简单简单简单</p>
-        </div>
-      </div>
-      <div class="li_box">
-        <div class="box_img">
-          <img src alt />
-        </div>
-        <div class="box_txt">
-          <h1>连接</h1>
-          <p>简单简单简单简单简单简单简单简单</p>
-        </div>
-      </div>
-    </div>
+    <productTop/>
     <div class="serve_about">
       <div class="about_title">
         <h1>有 关 有 麦 企 服</h1>
@@ -135,20 +107,27 @@
         </div>
       </div>
     </div>
-    <div class="serve_show">
-        <div class="show_wrap">
-            <div class="show_title">
-                <h1>产 品 展 示</h1>
-            </div>
-        </div>
-    </div>
+    <productBottom />
   </div>
 </template>
 
 <script>
 import "../../../styles/view/Product/children/serve.css";
+import productBottom from '../../../components/Product/Product_bottom/index.vue'
+import productTop from '../../../components/Product/Product_top/index'
 
-export default {};
+export default {
+  name:"serve",
+  data(){
+    return {
+
+    }
+  },
+  components:{
+    productBottom,
+    productTop
+  }
+};
 </script>
 
 <style scoped>

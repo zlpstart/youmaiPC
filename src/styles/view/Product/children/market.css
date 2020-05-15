@@ -1,0 +1,107 @@
+.market {
+    width: 100%;
+}
+.market_about {
+    width: 100%;
+    height: 706px;
+}
+.market_about_wrap {
+    width: 1170px;
+    height: 100%;
+    margin: auto;
+}
+.market_about_wrap_title {
+    width: 100%;
+    margin-bottom: 68px;
+}
+.market_about_wrap_title h1 {
+    font-size:24px;
+    font-family:Microsoft YaHei;
+    font-weight:bold;
+    color:rgba(51,51,51,1);
+}
+.market_about_wrap_box {
+    width: 100%;
+    margin-top: 68px;
+    display: flex;
+    justify-content: space-between;
+}
+.market_about_wrap_box_left {
+    width: 50%;
+    height: 614px;
+    background: red;
+    
+}
+.market_about_wrap_box_left img {
+    width:468px;
+    height:612px;
+    margin-left: 47px;
+}
+.market_about_wrap_box_right {
+    width: 50%;
+    margin-left: 272px;
+}
+.market_about_wrap_box_right p:nth-child(1){
+    margin-top: 0;
+}
+.market_about_wrap_box_right p {
+    font-size:16px;
+    font-family:Microsoft YaHei;
+    font-weight:400;
+    text-indent: 32px;
+    color:rgba(102,102,102,1);
+    margin-top: 20px;
+}
+.market_show {
+    width:100%;
+    height:420px;
+    background:linear-gradient(63deg,rgba(112,216,255,1),rgba(0,175,240,1));
+    opacity:0.85;
+    padding-top: 110px;
+}
+.market_show_wrap {
+    width: 1170px;
+    margin: auto;
+}
+.market_show_wrap_box {
+    width: 391px;
+}
+.market_show h1 {
+    font-size:24px;
+    font-family:Microsoft YaHei;
+    font-weight:bold;
+    color:rgba(255,255,255,1);
+}
+.market_show p {
+    font-size:16px;
+    font-family:Microsoft YaHei;
+    font-weight:400;
+    color:rgba(255,255,255,1);
+    margin-top: 48px;
+    letter-spacing:3px;
+}
+.market_content {
+    width: 100%;
+}
+.market_content_wrap {
+    width: 1170px;
+    padding-top: 120px;
+    margin: auto;
+}
+.market_content_wrap_title h1 {
+    font-size:24px;
+    font-family:Microsoft YaHei;
+    font-weight:bold;
+    color:rgba(51,51,51,1);
+}
+.market_content_wrap_img {
+    width: 100%;
+    height: 650px;
+    background: red;
+    margin-top: 143px;
+    margin-bottom: 175px;
+}
+.market_content_wrap_img img {
+    width: 100%;
+    height: 100%;
+}

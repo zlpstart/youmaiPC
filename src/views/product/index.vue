@@ -13,6 +13,7 @@
 <script>
 import navMenu from '../../components/NavMenu/index'
 import footerB from '../../components/Footer/index'
+// import product from '../../components/Product/index'
 import '../../styles/view/Product/index.css'
 
 export default {
