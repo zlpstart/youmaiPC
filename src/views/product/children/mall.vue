@@ -7,7 +7,7 @@
       </div>
       <div class="mall_about_content">
         <div class="mall_about_content_logo">
-          <img src alt />
+          <img src="../../../assets/mall/mall_icon_shoo.png" alt />
         </div>
         <div class="mall_about_content_txt">
           <p>有麦mall有麦mall有麦mall有麦mall有麦mall有麦mall有麦mall有麦mall有麦mall有麦mall有麦mall有麦mall有麦mall有麦mall有麦mall有麦mall有麦mall有麦mall有麦mall有麦mall有麦mall有麦mall有麦mall有麦mall有麦mall有麦mall有麦mall有麦mall有麦mall有麦mall有麦mall有麦mall有麦mall有麦mall有麦mall有麦mall有麦mall有麦mall有麦mall有麦mall有麦mall有麦mall有麦mall有麦mall有麦mall有麦mall有麦mall有麦mall有麦mall有麦mall有麦mall有麦mall有麦mall有麦mall有麦mall有麦mall有麦mall有麦mall有麦mall有麦mall有麦mall有麦mall有麦mall有麦mall有麦mall有麦mall有麦mall有麦mall有麦mall有麦mall有麦mall有麦mall有麦mall有麦mall有麦mall有麦mall有麦mall有麦mall有麦mall有麦mall有麦mall有麦mall有麦mall有麦mall有麦mall有麦mall有麦mall有麦mall有麦mall有麦mall有麦mall有麦mall有麦mall有麦mall有麦mall有麦mall有麦mall有麦mall有麦mall有麦mall有麦mall有麦mall有麦mall有麦mall有麦mall有麦mall有麦mall有麦mall</p>
@@ -23,7 +23,17 @@
         </div>
       </div>
     </div>
-    <productBottom/>
+    <div class="serve_show">
+      <div class="show_wrap">
+        <div class="show_title">
+          <h1>产 品 展 示</h1>
+        </div>
+        <div class="show_img">
+          <img src="../../../assets/mall/img_mall_product.png" alt />
+        </div>
+      </div>
+    </div>
+    <productBottom />
   </div>
 </template>
 

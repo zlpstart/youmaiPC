@@ -36,6 +36,10 @@
     height:525px;
     background: red;
 }
+.renting_about_wrap_contet_right img {
+    width: 100%;
+    height: 100%;
+}
 .renting_content {
     width: 100%;
     height:960px;
@@ -134,5 +138,4 @@
     width: 100%;
     height: 656px;
     margin-top: 99px;
-    background: red;
 }

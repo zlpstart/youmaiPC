@@ -73,6 +73,7 @@
           <li>Contacts</li>
         </ul>
       </div>
+      <div class="clear"></div>
     </div>
   </div>
 </template>

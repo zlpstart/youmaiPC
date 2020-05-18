@@ -28,9 +28,6 @@
     line-height:24px;
     margin-top: 27px;
 }
-.footer_boxT {
-    width: 92px;
-}
 .footer_boxT ul {
     margin-top: 27px;
 }
@@ -59,6 +56,11 @@
 }
 .footer_minbox {
     margin-top: 27px;
+    display: flex;
+    justify-content: space-between;
+}
+.footer_p {
+    margin-left: 20px;
 }
 .footer_p p:nth-child(2){
     margin-top: 11px;
@@ -135,4 +137,12 @@
     float: left;
     margin-left: 227px;
     background: #262626;
+}
+.clear {
+    clear: both;
+}
+.footer_img {
+    width:70px;
+    height:59px;
+    background: red;
 }

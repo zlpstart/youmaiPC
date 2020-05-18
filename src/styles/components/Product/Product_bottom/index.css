@@ -20,7 +20,6 @@
     width: 1170px;
     height: 786px;
     margin-top: 127px;
-    background: red;
 }
 .show_img img {
     width: 100%;
@@ -60,7 +59,6 @@
 .download_wrap_right_img {
     width: 304px;
     height: 439px;
-    background: red;
     margin-left: 293px;
 }
 .download_wrap_left_img_img {

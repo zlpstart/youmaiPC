@@ -22,7 +22,6 @@
 .home_wrap_content ul li{
     width:270px;
     height:330px;
-    background: blue;
     margin-top: 91px;
     position: relative;
 }
@@ -96,8 +95,7 @@
 .box_left {
     width: 458px;
     height: 391px;
-    display: flex;
-    justify-content: space-between;
+    background: red;
 }
 .box_right {
     width: 609px;
@@ -328,9 +326,11 @@ textarea:-ms-input-placeholder { /* Internet Explorer 10+ */
     display: flex;
     justify-content: space-between;
 }
-.box_left{
+.box_map_left{
     width: 272px;
     height: 61px;
+    display: flex;
+    justify-content: space-between;
 }
 .left_txt h1 {
     font-size:20px;
@@ -348,4 +348,43 @@ textarea:-ms-input-placeholder { /* Internet Explorer 10+ */
 }
 .left_txt {
     margin-left: 28px;
+}
+.Backtop {
+    width: 92px;
+    height: 180px;
+    position: fixed;
+    top: 200px;
+    right: 0;
+}
+.Backtop_box {
+    width: 100%;
+    height: 90px;
+    background: #04AAE8;
+    padding-top: 23px;
+    display: table;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+.map {
+    background: url('../../../assets//Home/Home_map.png')center center;
+}
+.xian {
+    width:24px;
+    height:1px;
+    background:rgba(255,255,255,1);
+    margin: auto;
+}
+.Backtop_box p {
+    font-size:13px;
+    font-family:Microsoft YaHei;
+    font-weight:400;
+    color:rgba(255,255,255,1);
+    line-height:26px;
+    text-align: center;
+}
+.Backtop_box img {
+    width: 30px;
+    height: 30px;
+    margin: auto;
+    margin-left: 31px;
 }

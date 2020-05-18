@@ -51,7 +51,6 @@
 .details_left {
     width: 323px;
     height: 656px;
-    background: red;
     margin-top: 99px;
 }
 .details_maxbox {
@@ -65,13 +64,10 @@
 }
 .details_right {
     width: 800px;
-    /* background: red;
-     */
     margin-top: 97px;
 }
 .boxs_img {
     width: 74px;
-    background: red;
     margin-top: 4px;
     height: 74px;
 }

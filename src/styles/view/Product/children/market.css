@@ -29,8 +29,6 @@
 .market_about_wrap_box_left {
     width: 50%;
     height: 614px;
-    background: red;
-    
 }
 .market_about_wrap_box_left img {
     width:468px;
@@ -97,11 +95,76 @@
 .market_content_wrap_img {
     width: 100%;
     height: 650px;
-    background: red;
     margin-top: 143px;
+    display: flex;
+    justify-content: space-between;
     margin-bottom: 175px;
+    position: relative;
 }
 .market_content_wrap_img img {
     width: 100%;
     height: 100%;
+}
+.market_content_wrap_img_left {
+    width: 195px;
+}
+.market_content_wrap_img_right {
+    width: 195px;
+}
+.market_content_wrap_img_center {
+    width: 755px;
+    height: 702px;
+    background: url('../../../../assets/market/img_jishi_con.png')center center;
+}
+.market_content_wrap_img_left_box h1 {
+    font-size:18px;
+    font-family:Microsoft YaHei;
+    font-weight:400;
+    color:rgba(51,51,51,1);
+    line-height:28px;
+}
+.market_content_wrap_img_left_box p {
+    margin-top: 19px;
+    font-size:13px;
+    font-family:Microsoft YaHei;
+    font-weight:400;
+    color:rgba(102,102,102,1);
+    line-height:18px;
+}
+.market_content_wrap_img_right_box h1 {
+    font-size:18px;
+    font-family:Microsoft YaHei;
+    font-weight:400;
+    color:rgba(51,51,51,1);
+    line-height:28px;
+}
+.market_content_wrap_img_right_box p {
+    font-size:13px;
+    font-family:Microsoft YaHei;
+    font-weight:400;
+    color:rgba(102,102,102,1);
+    line-height:18px;
+}
+.market_content_wrap_img_left_box {
+    width: 195px;
+}
+.market_content_wrap_img_left .market_content_wrap_img_left_box:nth-child(1) {
+    position: absolute;
+    top: 40px;
+    left: 150px;
+}
+.market_content_wrap_img_left .market_content_wrap_img_left_box:nth-child(2) {
+    position: absolute;
+    top: 590px;
+    left: 150px;
+}
+.market_content_wrap_img_right .market_content_wrap_img_right_box:nth-child(1) {
+    position: absolute;
+    top: 70px;
+    left: 1000px;
+}
+.market_content_wrap_img_right .market_content_wrap_img_right_box:nth-child(2) {
+    position: absolute;
+    top: 650px;
+    left: 1000px;
 }

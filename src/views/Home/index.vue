@@ -3,6 +3,17 @@
     <div class="home_topBar">
       <navMenu />
     </div>
+    <div class="Backtop">
+      <div class="Backtop_box">
+        <img src="../../assets/Home/home_icon_service_nor.png" alt />
+        <p>在线客服</p>
+      </div>
+      <div class="xian"></div>
+      <div class="Backtop_box" @click="topBack">
+        <img src="../../assets/Home/home_icon_backtop_nor.png" alt />
+        <p>TOP</p>
+      </div>
+    </div>
     <div class="home_wrap">
       <div class="home_wrap_content">
         <h1>我们的产品</h1>
@@ -95,7 +106,7 @@
     <div class="map">
       <div class="map_supernatant">
         <div class="supernatant_box">
-          <div class="box_left">
+          <div class="box_map_left">
             <div class="left_img">
               <img :src="orientation" alt />
             </div>
@@ -104,7 +115,7 @@
               <p>周一 - 周五: 09:00-18:00</p>
             </div>
           </div>
-          <div class="box_left">
+          <div class="box_map_left">
             <div class="left_img">
               <img :src="timer" alt />
             </div>
@@ -122,7 +133,7 @@
 
 <script>
 import navMenu from "../../components/NavMenu/index";
-import footerB from '../../components/Footer/index'
+import footerB from "../../components/Footer/index";
 import "../../styles/view/Home/index.css";
 
 export default {
@@ -159,6 +170,16 @@ export default {
   components: {
     navMenu,
     footerB
+  },
+  created() {
+    axios.get("http://jsonplaceholder.typicode.com/posts").then(res => {
+      console.log(res);
+    });
+  },
+  methods:{
+    topBack(){
+      document.body.scrollTop = document.documentElement.scrollTop = 0;
+    }
   }
 };
 </script>

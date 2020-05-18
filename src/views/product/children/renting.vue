@@ -13,7 +13,6 @@
             <p>有麦企服是集有麦企服是集有麦企服是集有麦企服是集有麦企服是集有麦企服是集有麦企服是集有麦企服是集有麦企服是集有麦企服是集有麦企服是集有麦企服是集</p>
           </div>
           <div class="renting_about_wrap_contet_right">
-            <img src alt />
           </div>
         </div>
       </div>
@@ -24,7 +23,17 @@
           <h1>有 麦 租 房 内 容</h1>
         </div>
         <div class="renting_content_wrap_img">
-            
+            <img src="../../../assets/renting/img_zufang.png" alt />
+        </div>
+      </div>
+    </div>
+    <div class="serve_show">
+      <div class="show_wrap">
+        <div class="show_title">
+          <h1>产 品 展 示</h1>
+        </div>
+        <div class="show_img">
+          <img src="../../../assets/renting/img_zufang_product.png" alt />
         </div>
       </div>
     </div>

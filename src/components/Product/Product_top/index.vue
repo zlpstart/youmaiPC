@@ -2,7 +2,7 @@
   <div class="serve_li">
     <div class="li_box">
       <div class="box_img">
-        <img src alt />
+        <img src="../../../assets/Product_top/chanye_icon_zhihui.png" alt />
       </div>
       <div class="box_txt">
         <h1>智慧</h1>
@@ -11,7 +11,7 @@
     </div>
     <div class="li_box">
       <div class="box_img">
-        <img src alt />
+        <img src="../../../assets/Product_top/chanye_icon_gaoxiao.png" alt />
       </div>
       <div class="box_txt">
         <h1>高效</h1>
@@ -20,7 +20,7 @@
     </div>
     <div class="li_box">
       <div class="box_img">
-        <img src alt />
+        <img src="../../../assets/Product_top/chanye_icon_lianjie.png" alt />
       </div>
       <div class="box_txt">
         <h1>连接</h1>
