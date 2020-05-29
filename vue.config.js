@@ -32,6 +32,15 @@ module.exports = {
             }
         }
     },
+    // proxyTable: { 
+    //     '/api': {  //使用"/api"来代替"http://f.apiplus.c" 
+    //       target: 'http://192.168.50.182/web', //源地址 
+    //       changeOrigin: true, //改变源 
+    //       pathRewrite: { 
+    //         '^/api': 'http://192.168.50.182/web' //路径重写 
+    //         } 
+    //     } 
+    //   },
     /**
      * You will need to set publicPath if you plan to deploy your site under a sub path,
      * for example GitHub Pages. If you plan to deploy your site to https://foo.github.io/bar/,

@@ -11,33 +11,54 @@
         <li>
           <router-link to="/news">新闻</router-link>
         </li>
-        <li>
-          <el-dropdown @command="handleCommand">
+        <li @mouseover="mouseOver" @mouseleave="mouseLeave">
+          <router-link to="">产品</router-link>
+          <div v-show="product" class="ul_li" @mouseover="mouseOver" @mouseleave="mouseLeave">
+            <div>
+              <router-link to="/product/serve">有麦企服</router-link>
+            </div>
+            <div>
+              <router-link to="/product/homeland">有麦家园</router-link>
+            </div>
+            <div>
+              <router-link to="/product/market">有麦集市</router-link>
+            </div>
+            <div>
+              <router-link to="/product/mall">有麦MALL</router-link>
+            </div>
+            <div>
+              <router-link to="/product/exploit">有麦开发</router-link>
+            </div>
+            <div>
+              <router-link to="/product/renting">有麦租房</router-link>
+            </div>
+          </div>
+          <!-- <el-dropdown @command="handleCommand">
             <span class="el-dropdown-link">
               产品
               <i class="el-icon-arrow-down el-icon--right"></i>
             </span>
-            <el-dropdown-menu slot="dropdown" class="selectS">
-              <el-dropdown-item command="a">
-                  <router-link to="/product/serve">有麦企服</router-link>
+            <el-dropdown-menu slot="dropdown" class="selectS" style="background:rgba(0,0,0,0)">
+              <el-dropdown-item command="a" >
+                  <router-link to="/product/serve" style="color:white,:hover{background:red}">有麦企服</router-link>
               </el-dropdown-item>
               <el-dropdown-item command="b">
-                  <router-link to="/product/homeland">有麦家园</router-link>
+                  <router-link to="/product/homeland" style="color:white">有麦家园</router-link>
               </el-dropdown-item>
               <el-dropdown-item command="c">
-                  <router-link to="/product/market">有麦集市</router-link>
+                  <router-link to="/product/market" style="color:white">有麦集市</router-link>
               </el-dropdown-item>
               <el-dropdown-item command="d">
-                  <router-link to="/product/mall">有麦MALL</router-link>
+                  <router-link to="/product/mall" style="color:white">有麦MALL</router-link>
               </el-dropdown-item>
               <el-dropdown-item command="e">
-                  <router-link to="/product/exploit">有麦开发</router-link>
+                  <router-link to="/product/exploit" style="color:white">有麦开发</router-link>
               </el-dropdown-item>
               <el-dropdown-item command="e">
-                  <router-link to="/product/renting">有麦租房</router-link>
+                  <router-link to="/product/renting" style="color:white">有麦租房</router-link>
               </el-dropdown-item>
             </el-dropdown-menu>
-          </el-dropdown>
+          </el-dropdown> -->
         </li>
         <li>
           <router-link to="/industrial">产业园</router-link>
@@ -60,12 +81,21 @@ export default {
   name: "navMenu",
   data() {
     return {
-      logo: require("../../assets/home_img_logo.png")
+      logo: require("../../assets/home_img_logo.png"),
+      product:false
     };
   },
   methods: {
     handleCommand(command) {
-      this.$message("click on item " + command);
+      
+    },
+    mouseOver(){
+      this.product = true
+      console.log(111)
+    },
+    mouseLeave(){
+      this.product = false
+      console.log(222)
     }
   }
 };
@@ -81,5 +111,79 @@ export default {
 }
 .selectS a {
     color: black;
+}
+</style>
+
+<style scoped>
+.navMenu {
+    width: 1170px;
+    height: 50px;
+    margin: auto;
+    line-height: 50px;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 45px;
+    left: 50%;
+    transform: translate(-50%,0);
+}
+.navMenu_logo {
+    width: 70px;
+    height: 50px;
+}
+.navMenu_logo img {
+    width: 100%;
+    height: 100%;
+}
+.navMenu_li a {
+    font-size:16px;
+    font-family:Microsoft YaHei;
+    font-weight:400;
+    color:white;
+}
+.navMenu_li a:hover,.router-link-exact-active {
+    font-size:16px;
+    font-family:Microsoft YaHei;
+    font-weight:400;
+    color:rgba(4,170,232,1);
+}
+.ul_li div a:hover {
+  font-size: 12px;
+  color:rgba(4,170,232,1);
+}
+.navMenu_li ul {
+    display: flex;
+    flex: 1;
+}
+.navMenu_li li {
+    margin-left: 100px;
+}
+.ul_li {
+  width: 70px;
+  height: 160px;
+  position: absolute;
+  margin-left: -17px;
+  margin-top: 0px;
+}
+.ul_li div a {
+  font-size:12px;
+  font-family:Microsoft YaHei;
+  font-weight:400;
+  color:rgba(255,255,255,1);
+  line-height:28px;
+}
+.ul_li div {
+  width: 100%;
+  text-align: center;
+  float: none;
+  height: auto;
+  margin-left: 0;
+  margin-top: 0;
+  display: block;
+  font-size:12px;
+  font-family:Microsoft YaHei;
+  font-weight:400;
+  color:rgba(255,255,255,1);
+  line-height:28px;
 }
 </style>

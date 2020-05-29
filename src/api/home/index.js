@@ -1,9 +1,9 @@
-// import request from '@/utils/request'
+import request from '../../../request'
 
-export function tree(data) {
+export function sendForm(data) {
   return request({
-    url: '/posts',
-    method: 'get',
-    // data
+    url: '/?m=Index&a=MessageBoard',
+    method: 'post',
+    data
   })
 }
