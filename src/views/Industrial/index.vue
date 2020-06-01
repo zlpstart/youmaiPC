@@ -117,12 +117,6 @@ export default {
 .industrial >>> .el-dropdown-menu {
   background: rgba(0, 0, 0, 0) !important;
 }
-.industrial >>> .el-popper {
-  background: red !important;
-}
-.industrial >>> .selectS {
-  background: red !important;
-}
 .industrial_top {
   width: 100%;
   height: 474px;
@@ -231,8 +225,8 @@ export default {
 .shoot_box:nth-child(2) {
   width: 100%;
   height: 50%;
-  background: url("../../assets/img_jidi_2@2x.png");
-    overflow: hidden;
+  background: url("../../assets/img_jidi_2.png");
+  overflow: hidden;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

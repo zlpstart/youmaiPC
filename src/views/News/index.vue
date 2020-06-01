@@ -9,9 +9,14 @@
         <div class="content_wrap">
           <p>{{showNews.create_time}}</p>
           <div class="wrap_img">
-            <img :src="showNews.new_img" alt />
+            <img :src="showNews.pc_img_small" alt />
           </div>
-          <div class="wrap_txt">{{showNews.content}}</div>
+          <div class="wrap_txt">
+            <p
+              v-for="item in showNews.content"
+              :key="item"
+            >{{item}}</p>
+          </div>
         </div>
         <div class="wrap_bottom">
           <p>
@@ -22,9 +27,14 @@
       </div>
       <div class="content_news_right">
         <h1>其他新闻</h1>
-        <div class="right_box" @click="getNewsPush(item.id)" v-for="item in newsList" :key="item.id">
+        <div
+          class="right_box"
+          @click="getNewsPush(item.id)"
+          v-for="item in newsList"
+          :key="item.id"
+        >
           <div class="news_box_img">
-            <img :src="item.new_img" alt />
+            <img :src="item.pc_img_big" alt />
           </div>
           <div class="box_txt">
             <h1>{{item.title}}</h1>
@@ -57,18 +67,20 @@ export default {
   },
   mounted() {
     getNews().then(res => {
+      console.log(res);
       this.showNews = res.data.data.recommend;
       this.newsList = res.data.data.Norecommend;
     });
   },
   methods: {
-    getNewsPush(e){
+    getNewsPush(e) {
       const para = {
-        id:e
-      }
-      let a = JSON.stringify(para)
+        id: e
+      };
+      let a = JSON.stringify(para);
       getNewsContent(a).then(res => {
-        this.showNews = res.data.data
+        console.log(res)
+        this.showNews = res.data.data;
       })
     }
   },
@@ -126,6 +138,10 @@ export default {
   height: 460px;
   margin-top: 19px;
 }
+.wrap_img img {
+  width: 100%;
+  height: 100%;
+}
 .wrap_txt {
   margin-top: 37px;
 }
@@ -179,6 +195,10 @@ export default {
 .news_box_img {
   width: 149px;
   height: 108px;
+}
+.news_box_img img {
+  width: 100%;
+  height: 100%;
 }
 .box_txt {
   width: 162px;

@@ -155,7 +155,6 @@ export default {
 .renting_content_wrap_content_center {
   width: 635px;
   height: 635px;
-  background: red;
 }
 .renting_content_wrap_content_left_box {
   width: 195px;

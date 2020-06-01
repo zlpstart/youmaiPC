@@ -208,7 +208,6 @@ export default {
 .box_img {
     width: 100%;
     height: 152px;
-    background: red;
 }
 .box_img img {
     width: 100%;
@@ -271,7 +270,6 @@ export default {
 .advantage_box_img {
     width: 270px;
     height: 270px;
-    background: red;
 }
 .advantage_box_img img {
     width: 100%;

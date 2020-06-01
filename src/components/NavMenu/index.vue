@@ -33,32 +33,6 @@
               <router-link to="/product/renting">有麦租房</router-link>
             </div>
           </div>
-          <!-- <el-dropdown @command="handleCommand">
-            <span class="el-dropdown-link">
-              产品
-              <i class="el-icon-arrow-down el-icon--right"></i>
-            </span>
-            <el-dropdown-menu slot="dropdown" class="selectS" style="background:rgba(0,0,0,0)">
-              <el-dropdown-item command="a" >
-                  <router-link to="/product/serve" style="color:white,:hover{background:red}">有麦企服</router-link>
-              </el-dropdown-item>
-              <el-dropdown-item command="b">
-                  <router-link to="/product/homeland" style="color:white">有麦家园</router-link>
-              </el-dropdown-item>
-              <el-dropdown-item command="c">
-                  <router-link to="/product/market" style="color:white">有麦集市</router-link>
-              </el-dropdown-item>
-              <el-dropdown-item command="d">
-                  <router-link to="/product/mall" style="color:white">有麦MALL</router-link>
-              </el-dropdown-item>
-              <el-dropdown-item command="e">
-                  <router-link to="/product/exploit" style="color:white">有麦开发</router-link>
-              </el-dropdown-item>
-              <el-dropdown-item command="e">
-                  <router-link to="/product/renting" style="color:white">有麦租房</router-link>
-              </el-dropdown-item>
-            </el-dropdown-menu>
-          </el-dropdown> -->
         </li>
         <li>
           <router-link to="/industrial">产业园</router-link>

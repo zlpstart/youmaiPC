@@ -5,7 +5,7 @@ let root = process.env.BASE_API;// 会根据环境不同自动获取对应环境
 // 自定义封装的 request,
 
 const request = axios.create({
-    baseURL: 'http://192.168.50.182/web',//所有接口主域名，
+    baseURL: 'http://web.iyoumai.net',//所有接口主域名，
     timeout: 50000, // 请求超时时间
     withCredentials: false,// 根据需是否开启，关于cookie是否需要被带入请求头，后端也要做改动
 });

@@ -93,11 +93,11 @@
         <h1>有麦新闻</h1>
         <div class="home_box">
           <div class="box_left">
-            <img :src="showNews.new_img" alt />
+            <img :src="showNews.pc_img_small" alt />
           </div>
           <div class="box_right">
             <h1 class="right_title">{{showNews.title}}</h1>
-            <p class="zlp_p">{{showNews.content}}</p>
+            <p class="zlp_p" v-for="item in showNews.content" :key="item">{{item}}</p>
             <div class="find" @click="pushNews">
               <p>查看更多</p>
               <span>→</span>
@@ -282,6 +282,7 @@ export default {
   mounted() {
     this.setI(),
       getNews().then(res => {
+        console.log(res)
         this.showNews = res.data.data.recommend;
       });
   },
@@ -443,7 +444,6 @@ export default {
   margin-right: 29px;
 }
 .home_wrap_content ul li:hover {
-  /* background: red; */
   box-shadow: 0px 3px 61px 9px rgba(0, 0, 0, 0.06);
 }
 .home_wrap_content ul {
@@ -524,6 +524,10 @@ export default {
 .box_left {
   width: 458px;
   height: 391px;
+}
+.box_left img {
+  width: 100%;
+  height: 100%;
 }
 .box_right {
   width: 712px;
@@ -860,7 +864,7 @@ textarea::-ms-input-placeholder {
   box-sizing: border-box;
 }
 .map {
-  background: url("../../assets/img_map (3).png") center center no-repeat;
+  background: url("../../assets/map_wrap.png") center no-repeat;
   background-size: 100%;
 }
 .xian {
