@@ -67,7 +67,6 @@ export default {
   },
   mounted() {
     getNews().then(res => {
-      console.log(res);
       this.showNews = res.data.data.recommend;
       this.newsList = res.data.data.Norecommend;
     });

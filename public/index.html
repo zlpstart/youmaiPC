@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
   <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
   <title>有麦科技</title>
   <link rel="stylesheet" href="">
   <style>
@@ -26,4 +27,9 @@
   <!-- built files will be auto injected -->
 </body>
 <script src='//kefu.easemob.com/webim/easemob.js?configId=36a7500e-e45f-4b51-a418-9d4668ae0067'></script>
+<script>
+  axios.get("http://web.iyoumai.net/?m=Index&a=NEWS")
+    .then(res => console.log(res))
+</script>
+
 </html>

@@ -282,7 +282,6 @@ export default {
   mounted() {
     this.setI(),
       getNews().then(res => {
-        console.log(res)
         this.showNews = res.data.data.recommend;
       });
   },
@@ -864,8 +863,13 @@ textarea::-ms-input-placeholder {
   box-sizing: border-box;
 }
 .map {
-  background: url("../../assets/map_wrap.png") center no-repeat;
+  background: url("../../assets/img_map (4).png") center no-repeat;
   background-size: 100%;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  background-repeat: no-repeat;
 }
 .xian {
   width: 24px;

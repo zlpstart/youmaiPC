@@ -69,6 +69,11 @@ const routes = [
         path: '/product/renting',
         name: 'renting',
         component: () => import('../views/product/children/renting.vue')
+      },
+      {
+        path: '*',
+        name: 'error',
+        component: () => import('../views/error/index.vue')
       }
     ]
   },

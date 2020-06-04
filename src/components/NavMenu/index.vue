@@ -127,17 +127,20 @@ export default {
 }
 .navMenu_li ul {
     display: flex;
-    flex: 1;
+    flex: 1; 
 }
 .navMenu_li li {
     margin-left: 100px;
 }
 .ul_li {
-  width: 70px;
-  height: 160px;
+  width: 90px;
+  height: 180px;
   position: absolute;
-  margin-left: -17px;
+  margin-left: -25px;
+  text-align: center;
+  border-radius: 10px;
   margin-top: 0px;
+  background: rgba(0, 0, 0, 0.5);
 }
 .ul_li div a {
   font-size:12px;
